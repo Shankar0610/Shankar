@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int a,b;
+  char GM;
+
+  printf("enter two numbers (a:b):\n");
+  scanf("%d:%d", &a,&b);
+
+  printf("enter an operator +,-,*,/");
+  scanf("%c", &GM);
+
+  switch (GM) 
+  {
+  
+    case '+': printf("%d", a+b);
+              break;
+    case '-': printf("%d", a-b);
+              break;
+    case '*': printf("%d", a*b);
+              break;
+    case '/': printf("%d", a/b);
+              break;
+    case '%': printf("%d", a%b);
+              break;
+     default: printf("invalid operator");
+  } 
+  return 0;
+}
